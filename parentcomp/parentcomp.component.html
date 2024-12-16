@@ -1,0 +1,13 @@
+<p>parentcomp works!</p>
+<app-childcomp [datafromparent]="'Hello from parent'"></app-childcomp>
+
+<app-childcomp (datasenttoparent)="datareceived($event)"></app-childcomp>
+{{ receivdeFromChild }}
+
+<p>{{ "'Hello World'" | uppercase }}</p>
+<p>{{ "'Hello World'" | lowercase }}</p>
+<p>{{ "'Hello World'" | titlecase }}</p>
+<p>{{ "'Hello World'" | slice : 1 : 5 }}</p>
+<p>{{ myobj | json }}</p>
+<p>{{ ".12234" | percent : "1.0-0" }}</p>
+<p>{{ "'12/03/2024" | date : "shortDate" }}</p>
